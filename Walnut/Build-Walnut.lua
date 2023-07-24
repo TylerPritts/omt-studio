@@ -20,6 +20,8 @@ project "Walnut"
       "Platform/GUI",
 
       "../vendor/imgui",
+      "../vendor/implot",
+      "../vendor/imnotify",
       "../vendor/glfw/include",
       "../vendor/stb_image",
 
