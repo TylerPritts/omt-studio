@@ -24,3 +24,6 @@
 [submodule "Walnut-Modules/Walnut-Networking"]
 	path = Walnut-Modules/Walnut-Networking
 	url = https://github.com/StudioCherno/Walnut-Networking
+[submodule "vendor/imnotify"]
+	path = vendor/imnotify
+	url = https://github.com/TylerPritts/imnotify.git
