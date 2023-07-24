@@ -27,3 +27,6 @@
 [submodule "vendor/imnotify"]
 	path = vendor/imnotify
 	url = https://github.com/TylerPritts/imnotify.git
+[submodule "vendor/implot"]
+	path = vendor/implot
+	url = https://github.com/TylerPritts/implot.git
