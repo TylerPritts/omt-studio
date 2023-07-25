@@ -956,10 +956,13 @@ namespace Walnut {
 				// Dockspace
 				ImGuiIO& io = ImGui::GetIO();
 				ImGuiStyle& style = ImGui::GetStyle();
-				float minWinSizeX = style.WindowMinSize.x;
-				style.WindowMinSize.x = 370.0f;
+				float  minWinSizeX = style.WindowMinSize.x;
+				style.WindowMinSize.x = 60.0f;
+				float  minWinSizeY = style.WindowMinSize.y;
+				style.WindowMinSize.y = 60.0f;
 				ImGui::DockSpace(ImGui::GetID("MyDockspace"));
 				style.WindowMinSize.x = minWinSizeX;
+				style.WindowMinSize.y = minWinSizeY;
 
 				if (!m_Specification.CustomTitlebar)
 					UI_DrawMenubar();
