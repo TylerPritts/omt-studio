@@ -3,6 +3,9 @@
 
 #include "Walnut/Image.h"
 #include "Walnut/UI/UI.h"
+#include "Field.cpp"
+#include "Coordinate.cpp"
+#include "Tools.cpp"
 
 class ExampleLayer : public Walnut::Layer
 {
@@ -13,7 +16,15 @@ public:
 		ImGui::Button("Button");
 		ImGui::End();
 
-		ImGui::ShowDemoWindow();
+
+		//Custom made windows
+		ImField::ShowFieldWindow(); //Field.cpp
+		ImField::ShowToolWindow(); //Tools.cpp
+		ImField::ShowCoordinateWindow(); //Coordinate.cpp
+
+		//Demo windows - Comment out before release
+		ImPlot::ShowDemoWindow(); //ImPlot Demo
+		ImGui::ShowDemoWindow(); //ImGui Demo
 
 		UI_DrawAboutModal();
 	}
